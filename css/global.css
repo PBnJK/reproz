@@ -11,6 +11,10 @@
 	--c-lightpurple-transp: #DFD7FF30;
 }
 
+body {
+	padding: 88px 128px;
+}
+
 #navbar {
 	display: flex;
 	align-items: center;
@@ -66,8 +70,9 @@ nav {
 	right: 0;
 
 	width: 320px;
-	
+
 	background-color: var(--c-lightpurple-transp);
+	border-bottom-left-radius: 16px;
 
 	z-index: 1;
 }
@@ -87,6 +92,10 @@ nav {
 	color: var(--c-darkpurple2);
 
 	border-bottom: 2px solid var(--c-lightpurple);
+}
+
+#nav-mobile a:last-child {
+	border-bottom-left-radius: 16px;
 }
 
 #nav-mobile a:hover {
