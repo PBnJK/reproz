@@ -1,3 +1,7 @@
+#tagline {
+	back
+}
+
 h1 {
     margin-top: 192px;
 
@@ -18,7 +22,7 @@ h1 {
     background-image: url("../assets/waves.svg");
     background-repeat: repeat-x;
     background-size: cover;
-    background-position-y: 2px;
+    background-position: 0 2px;
 }
 
 .content {
@@ -64,46 +68,50 @@ figcaption a {
 	text-decoration: none;
 }
 
-.purp-content {
+#purp-content {
     background-color: var(--c-purple);
 }
 
-.purp-content p {
+#purp-content p {
     color: white;
 }
 
-.purp-content figcaption {
+#purp-content figcaption {
 	background-color: white;
 	color: var(--c-grey);
 }
 
-.purp-content img {
+#purp-content img {
     border-radius: 24px 64px 0px 0px;
 	border-color: white;
 }
 
-.wh-content {
+#wh-content {
 	background-color: white;
 }
 
-.wh-content p {
+#wh-content p {
     color: var(--c-grey);
 }
 
-.wh-content figcaption {
+#wh-content figcaption {
 	background-color: var(--c-grey);
 	color: white;
 }
 
-.wh-content figcaption a {
+#wh-content figcaption a {
 	color: var(--c-lightpurple)
 }
 
-.wh-content figcaption a:visited {
+#wh-content figcaption a:visited {
 	color: var(--c-highlight)
 }
 
-.wh-content img {
+#wh-content img {
     border-radius: 64px 24px 0px 0px;
 	border-color: var(--c-grey);
+}
+
+#signup {
+
 }
