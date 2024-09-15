@@ -32,11 +32,11 @@ function loadHeader() {
         </label>
 
         <div id="nav-mobile">
-            <a href="#">
+            <a href="cursos.html">
                 <i class="fa fa-book"></i> Cursos
             </a>
 
-            <a href="#">
+            <a href="locais.html">
                 <i class="fa fa-map-marker"></i> Locais
             </a>
 

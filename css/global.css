@@ -8,7 +8,9 @@
 	--c-darkerorange: #F07000;
 
 	--c-lightpurple: #DFD7FF;
-	--c-lightpurple-transp: #DFD7FF30;
+	--c-lightpurple-transp: #EFE7FF;
+
+	--c-grey: #292D3E;
 }
 
 body {
