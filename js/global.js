@@ -1,22 +1,22 @@
 function setFocusable(cb) {
-    const NEW_VALUE = cb.checked ? "0" : "-1";
-    const MENU = document.getElementById("nav-mobile").children;
-    for(c of MENU) {
-        c.setAttribute("tabindex", NEW_VALUE);
-        console.log(c);
-    }
+	const NEW_VALUE = cb.checked ? "0" : "-1";
+	const MENU = document.getElementById("nav-mobile").children;
+	for (c of MENU) {
+		c.setAttribute("tabindex", NEW_VALUE);
+		console.log(c);
+	}
 }
 
 function toggleHamburger() {
-    const CB = document.getElementById("check");
-    CB.checked = !CB.checked;
+	const CB = document.getElementById("check");
+	CB.checked = !CB.checked;
 
-    setFocusable(CB);
+	setFocusable(CB);
 }
 
 function loadHeader() {
-    const TEMPLATE = document.createElement('template');
-    TEMPLATE.innerHTML = `
+	const TEMPLATE = document.createElement('template');
+	TEMPLATE.innerHTML = `
 <header id="navbar">
     <a href="index.html" id="logo-link">
         <img id="logo" src="assets/img_logo_proz.png" alt="Logo da Proz">
@@ -56,7 +56,7 @@ function loadHeader() {
 </header>
     `;
 
-    document.body.appendChild(TEMPLATE.content);
+	document.body.appendChild(TEMPLATE.content);
 }
 
 loadHeader();

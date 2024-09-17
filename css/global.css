@@ -6,11 +6,16 @@
 
 	--c-brightorange: #FF7F00;
 	--c-darkerorange: #F07000;
+	--c-darkestorange: #E06000;
 
 	--c-lightpurple: #DFD7FF;
 	--c-lightpurple-transp: #EFE7FF;
+	--c-lightpurple-barely: #DFD7FF80;
 
 	--c-grey: #292D3E;
+
+	--c-lightgrey: #7B7698;
+	--c-lightgrey-transp: #7B769850;
 }
 
 body {
@@ -75,6 +80,9 @@ nav {
 	width: 320px;
 
 	background-color: var(--c-lightpurple-transp);
+
+	border-left: 2px solid var(--c-highlight);
+	border-bottom: 2px solid var(--c-highlight);
 	border-bottom-left-radius: 16px;
 
 	z-index: 1;

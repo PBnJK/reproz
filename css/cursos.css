@@ -1,0 +1,223 @@
+body {
+	font-family: 'Sora', sans-serif;
+}
+
+#container {
+	max-width: 1600px;
+	margin-inline: auto;
+}
+
+#head {
+	margin-left: 32px;
+	margin-right: 32px;
+}
+
+#head h1 {
+	margin-bottom: 0px;
+
+	font-size: 32pt;
+	color: var(--c-purple);
+}
+
+#head p {
+	margin-top: 0px;
+	margin-bottom: 32px;
+
+	font-size: 16pt;
+	color: var(--c-lightgrey);
+}
+
+#course-grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: 1fr;
+
+	background-color: var(--c-highlight);
+
+	overflow: hidden;
+	grid-gap: 1px;
+
+	border: 1px solid var(--c-highlight);
+	border-radius: 16px;
+
+	margin-left: 32px;
+	margin-right: 32px;
+}
+
+.course-list-container {
+	padding: 2px 8px;
+
+	background-color: var(--c-lightpurple-transp);
+}
+
+.course-list-container h2 {
+	margin-top: 20px;
+	color: var(--c-darkpurple);
+}
+
+.course-list {
+	display: flex;
+	flex-flow: column;
+}
+
+details {
+	transition: background-color 0.2s;
+	background-color: var(--c-lightpurple-barely);
+	
+	min-height: 32px;
+
+	font-size: 14pt;
+	color: var(--c-lightgrey);
+
+	margin-bottom: 20px;
+	padding: 0.5em 0.5em 0;
+
+	border: 1px solid #aaa;
+	border-radius: 8px;
+}
+
+details:not(:hover) .choose-course {
+	opacity: 0;
+	visibility: hidden;
+}
+
+details:hover .choose-course {
+	opacity: 1;
+	visibility: visible;
+}
+
+details > h3 {
+	margin: 8px 0px;
+}
+
+details > h3 > em {
+	color: var(--c-purple);
+	font-style: normal;
+}
+
+details > p {
+	border-top: 2px dotted var(--c-lightgrey);
+	margin: 8px 0px;
+	padding-top: 6px;
+}
+
+details > summary {
+	pointer-events: none;
+
+	font-size: 12pt;
+	font-style: italic;
+	color: var(--c-grey);
+}
+
+details > summary::marker {
+	color: var(--c-purple);
+}
+
+details[open] > summary {
+	list-style-type: '↓ ';
+}
+
+.choose-course {
+	transition: opacity 50ms;
+
+	pointer-events: auto;
+	
+	background-color: var(--c-brightorange);
+	font-size: 12pt;
+	font-weight: 800;
+	color: white;
+
+	width: 160px;
+	height: 32px;
+
+	margin: 16px 0px;
+
+	border: 2px solid var(--c-darkerorange);
+	border-radius: 16px;
+}
+
+.choose-course:hover {
+	background-color: var(--c-darkerorange);
+	border: 4px dotted var(--c-darkestorange);
+
+	cursor: pointer;
+}
+
+dialog[open] {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+
+	border: none;
+	border-radius: 16px;
+}
+
+#close-modal {
+	background-color: transparent;
+	border: none;
+
+	font-size: 16pt;
+	color: red;
+
+	align-self: end;
+}
+
+#close-modal:hover {
+	color: crimson;
+	cursor: pointer;
+}
+
+form > label {
+	display: block;
+
+	font-size: 11pt;
+	font-weight: 800;
+	color: var(--c-darkpurple);
+}
+
+form > label::after {
+	color: red;
+		content: ' *';
+}
+
+input, select {
+	box-sizing: border-box;
+	background-color: #EEE;
+	
+	padding: 12px 20px;
+	margin-bottom: 10px;
+
+	width: 100%;
+
+	border: 1px solid #CFCDEE;
+	border-radius: 6px;
+}
+
+select:hover {
+	background-color: #D7D7D7;
+	cursor: pointer;
+}
+
+input::placeholder {
+	font-size: 14px;
+	color: var(--c-lightgrey); 
+}
+
+input[type="submit"] {
+	background-color: var(--c-brightorange);
+
+	font-weight: 800;
+	font-size: 14pt;
+	color: white;
+
+	margin-top: 16px;
+
+	border-radius: 32px;
+}
+
+input[type="submit"]:hover {
+	background-color: var(--c-darkerorange);
+	color: #E7E7E7;
+
+	cursor: pointer;
+}
