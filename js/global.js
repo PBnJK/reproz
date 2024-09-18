@@ -17,9 +17,9 @@ function toggleHamburger() {
 function loadHeader() {
 	const TEMPLATE = document.createElement('template');
 	TEMPLATE.innerHTML = `
-<header id="navbar">
-    <a href="index.html" id="logo-link">
-        <img id="logo" src="assets/img_logo_proz.png" alt="Logo da Proz">
+<header>
+    <a href="index.html">
+        <img id="logo" src="assets/logo.svg" alt="Logo da Proz">
     </a>
 
     <nav>
@@ -40,20 +40,15 @@ function loadHeader() {
                 <i class="fa fa-map-marker"></i> Locais
             </a>
 
-            <a href="#">
-                <i class="fa fa-times-circle"></i> Coisa 1
-            </a>
-
-            <a href="#">
-                <i class="fa fa-times-circle"></i> Coisa 2
-            </a>
-
             <a href="https://gestao.prozeducacao.com.br/">
                 <i class="fa fa-desktop"></i> JoyClass
             </a>
         </div>
     </nav>
 </header>
+
+<footer>
+</footer>
     `;
 
 	document.body.appendChild(TEMPLATE.content);

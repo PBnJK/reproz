@@ -19,12 +19,17 @@
 }
 
 body {
-	padding: 88px 0px;
+	display: grid;
+	grid-template-rows: 1fr auto auto;
+
+	min-height: 100vh;
+
+	padding: 88px 0px 0px 0px;
 	margin: 0;
 }
 
-#navbar {
-	display: flex;
+header {
+	display: inline-flex;
 	align-items: center;
 	justify-content: space-between;
 
@@ -42,10 +47,8 @@ body {
 
 	padding-left: 32px;
 	padding-right: 32px;
-}
 
-#logo-link {
-	width: 109px;
+	width: calc(100vw - 64px);
 }
 
 #logo {
@@ -53,7 +56,6 @@ body {
 }
 
 nav {
-	padding: 1.5rem 2rem;
 	color: #fff;
 }
 
@@ -91,7 +93,7 @@ nav {
 #nav-mobile a {
 	display: block;
 
-	padding: 32px 48px;
+	padding: 32px;
 
 	font-family: "Sora", sans-serif;
 	font-size: 20px;
@@ -111,7 +113,6 @@ nav {
 
 #nav-mobile a:hover {
 	background-color: var(--c-lightpurple);
-	color: var(--c-darkpurple);
 }
 
 #check {
@@ -134,6 +135,21 @@ nav {
 #check:not(:checked) ~ #nav-mobile {
 	transform: translateX(320px);
 	opacity: 0;
+}
+
+footer {
+	display: inline-flex;
+	align-items: center;
+	justify-content: space-between;
+
+	background-color: var(--c-darkpurple);
+
+	width: calc(100vw - 64px);
+	min-height: 256px;
+	
+	padding-left: 32px;
+	padding-right: 32px;
+
 }
 
 /* TEMP

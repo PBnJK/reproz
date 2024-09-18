@@ -60,7 +60,7 @@ body {
 	flex-flow: column;
 }
 
-details {
+.course {
 	transition: background-color 0.2s;
 	background-color: var(--c-lightpurple-barely);
 	
@@ -76,32 +76,32 @@ details {
 	border-radius: 8px;
 }
 
-details:not(:hover) .choose-course {
+.course:not(:hover) .choose-course {
 	opacity: 0;
 	visibility: hidden;
 }
 
-details:hover .choose-course {
+.course:hover .choose-course {
 	opacity: 1;
 	visibility: visible;
 }
 
-details > h3 {
+.course > h3 {
 	margin: 8px 0px;
 }
 
-details > h3 > em {
+.course > h3 > em {
 	color: var(--c-purple);
 	font-style: normal;
 }
 
-details > p {
+.course > p {
 	border-top: 2px dotted var(--c-lightgrey);
 	margin: 8px 0px;
 	padding-top: 6px;
 }
 
-details > summary {
+.course > summary {
 	pointer-events: none;
 
 	font-size: 12pt;
@@ -109,11 +109,11 @@ details > summary {
 	color: var(--c-grey);
 }
 
-details > summary::marker {
+.course > summary::marker {
 	color: var(--c-purple);
 }
 
-details[open] > summary {
+.course[open] > summary {
 	list-style-type: '↓ ';
 }
 
@@ -220,4 +220,13 @@ input[type="submit"]:hover {
 	color: #E7E7E7;
 
 	cursor: pointer;
+}
+
+@media screen and (max-width: 700px) {
+	#course-grid {
+		grid-template-columns: 1fr;
+		grid-template-rows: repeat(3, 1fr);
+		
+		grid-gap: 8px;
+	}
 }
