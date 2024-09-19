@@ -7,6 +7,7 @@
 	<title>Cursos Técnicos e Profissionalizantes - Proz Educação</title>
 
 	<link href="css/cursos.css" rel="stylesheet">
+	<link href="css/content.css" rel="stylesheet">
 	<link href="css/global.css" rel="stylesheet">
 
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
@@ -18,7 +19,7 @@
 </head>
 
 <body>
-	<div id="container">
+	<main>
 		<div id="head">
 			<h1>Cursos Disponíveis</h1>
 			<p>Aqui você pode ver todos os cursos que a Proz oferece!</p>
@@ -116,7 +117,42 @@
 				</div>
 			</div>
 		</div>
-	</div>
+
+		<div class="content purp-content">
+			<p>
+				Diferentemente de outras instituições, a Proz certifica que você sairá
+				<em>com todo conhecimento que você precisa</em> para entrar no mercado
+				de trabalho.
+			</p>
+			<h2 id="a-porque-proz">
+				<i class="fa fa-arrow-right"></i>&nbsp;Por que fazer o seu curso na Proz?
+			</h2>
+		</div>
+
+		<div class="content wh-content">
+			<h2>
+				<i class="fa fa-arrow-right"></i>&nbsp;Qual curso devo escolher?
+			</h2>
+			<p>
+				A escolha do curso ideal <em>é uma das decisões mais importantes que você
+				deve tomar</em> e, portanto, é de suma importância que você faça a escolha
+				correta!
+				<br><br>
+				Confira
+				<a href="https://blog.prozeducacao.com.br/cursos/elhor-curso-tecnico/">
+					este post
+				</a>
+				publicado no nosso blog sobre como escolher o curso ideal para você!
+				<br><br>
+				Não apenas isso, mas também criamos um <em>teste vocacional</em> para
+				ajudar você na escolha do seu curso. Basta clicar
+				<a href="https://inscricao.prozeducacao.com.br/teste-vocacional-lp/">
+					neste link
+				</a>
+				para realizar o teste.
+			</p>
+		</div>
+	</main>
 
 	<dialog>
 		<button id="close-modal"><i class="fa fa-close"></i></button>
@@ -140,7 +176,8 @@
 			<input required type="email" id="email-input" placeholder="Seu e-mail aqui">
 			
 			<label for="tel-input">Telefone:</label>
-			<input required type="tel" id="tel-input" placeholder="Seu telefone (com DDD) aqui">
+			<input required type="tel" id="tel-input" placeholder="Seu telefone (com DDD) aqui"
+					onkeyup="handlePhone(event);" maxlength="15" pattern="\(\d{2}\) \d{4,5}-\d{4}">
 
 			<label for="state-select">Estado:</label>
 			<select required name="state" id="state-select">

@@ -1,0 +1,67 @@
+h1 {
+	font-family: 'Sora', sans-serif;
+	font-size: 32pt;
+	color: var(--c-purple);
+
+	margin-left: 128px;
+}
+
+#mapa-texto {
+	display: grid;
+	grid-template-columns: 1.5fr 1fr;
+
+	background-color: var(--c-lightpurple-barely);
+	border-radius: 64px;
+	border: 2px solid var(--c-lightpurple);
+
+	margin: 0px 64px 128px 64px;
+
+	padding: 32px;
+
+	width: calc(100vw - 128px);
+}
+
+#local-info {
+	font-family: 'Sora', sans-serif;
+}
+
+#estado {
+	font-size: 28pt;
+	color: var(--c-purple);
+
+	padding-left: 20px;
+}
+
+#local {
+	columns: 2;
+}
+
+#local li {
+	font-size: 16pt;
+}
+
+#local li::marker {
+	color: var(--c-purple);
+}
+
+path {
+	fill: var(--c-purple);
+
+	transition: transform 100ms;
+    pointer-events: all;
+}
+
+#br-sp {
+	fill: var(--c-brightorange);
+	transform-origin: 405px 450px;
+}
+
+#br-mg {
+	fill: var(--c-brightorange);
+	transform-origin: 460px 380px;
+}
+
+#br-pr {
+	fill: var(--c-brightorange);
+	transform-origin: 320px 480px;
+}

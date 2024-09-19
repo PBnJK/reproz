@@ -19,9 +19,6 @@
 }
 
 body {
-	display: grid;
-	grid-template-rows: 1fr auto auto;
-
 	min-height: 100vh;
 
 	padding: 88px 0px 0px 0px;
@@ -51,7 +48,7 @@ header {
 	width: calc(100vw - 64px);
 }
 
-#logo {
+.logo {
 	vertical-align: middle;
 }
 
@@ -140,16 +137,129 @@ nav {
 footer {
 	display: inline-flex;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: center;
+	flex-direction: column;
 
 	background-color: var(--c-darkpurple);
 
-	width: calc(100vw - 64px);
-	min-height: 256px;
-	
-	padding-left: 32px;
-	padding-right: 32px;
+	width: calc(100vw - 128px);
+	min-height: 320px;
 
+	gap: 16px;
+
+	padding-left: 64px;
+	padding-right: 64px;
+
+}
+
+footer p {
+	font-family: "Sora", sans-serif;
+	font-size: 10pt;
+	color: white;
+
+	margin-top: 0px;
+}
+
+footer p a {
+	color: white;
+}
+
+#logo-tel {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+
+	width: 100%;
+
+	margin: 0px 192px;
+}
+
+#links {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	gap: 32px;
+}
+
+#links a {
+	font-family: "Sora", sans-serif;
+	font-size: 18pt;
+	font-weight: 700;
+	color: white;
+	
+	text-decoration: none;
+}
+
+#links i {
+	color: var(--c-darkerorange);
+}
+
+#link-whats i {
+	color: #25D366;
+}
+
+#socials {
+	display: flex;
+	align-items: center;
+
+	gap: 8px;
+}
+
+#socials div {
+	background-color: var(--c-darkerorange);
+	border-radius: 32px;
+
+	text-align: center;
+	
+	width: 56px;
+	height: 56px;
+}
+
+#socials div:hover {
+	background-color: var(--c-darkestorange);
+	cursor: pointer;
+}
+
+#socials i {
+	color: white;
+	font-size: 24pt;
+
+	line-height: 56px;
+	height: 56px;
+
+	vertical-align: center;
+}
+
+hr {
+	display: block;
+	
+	border: 0;
+	clear: both;
+
+	width: 95%;
+	height: 1px;
+	
+	background-color: var(--c-lightgrey);
+}
+
+@media screen and (max-width: 1280px) {
+	footer {
+		width: calc(100vw - 32px);
+
+		padding-left: 16px;
+		padding-right: 16px;
+	}
+
+	#logo-tel {
+		margin: 0px 32px;
+		gap: 16px;
+		flex-direction: column;
+	}
+
+	#links a {
+		font-size: 10pt;
+	}
 }
 
 /* TEMP

@@ -1,0 +1,116 @@
+.content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+
+    padding: 128px 32px;
+}
+
+.content p {
+    margin: 0;
+
+    width: 40ch;
+	overflow-wrap: break-word;
+	text-justify: inter-word;
+
+    font-family: 'Sora', sans-serif;
+    font-weight: 600;
+    font-size: 20pt;
+}
+
+.content p a {
+	text-decoration: underline dotted;
+}
+
+.content em {
+    color: var(--c-brightorange);
+}
+
+.content img {
+    border: 8px solid;
+	width: 576px;
+}
+
+.content h2 {
+    font-family: 'Sora', sans-serif;
+	font-size: 24pt;
+	font-style: italic;
+
+	align-self: flex-start;
+	margin: 0;
+}
+
+figure {
+	display: flex;
+	flex-flow: column;
+}
+
+figcaption {
+	padding: 0px 12px 8px 12px;
+    font-family: 'Sora', sans-serif;
+}
+
+figcaption a {
+	text-decoration: none;
+}
+
+.purp-content {
+    background-color: var(--c-purple);
+}
+
+.purp-content p {
+    color: white;
+}
+
+.purp-content p a {
+	color: var(--c-darkerpurple);
+}
+
+.purp-content figcaption {
+	background-color: white;
+	color: var(--c-grey);
+}
+
+.purp-content img {
+    border-radius: 24px 64px 0px 0px;
+	border-color: white;
+}
+
+.purp-content h2 {
+	color: var(--c-darkerorange);
+}
+
+.wh-content {
+	background-color: white;
+}
+
+.wh-content p {
+    color: var(--c-grey);
+}
+
+.wh-content p a {
+	color: var(--c-purple);
+}
+
+.wh-content figcaption {
+	background-color: var(--c-grey);
+	color: white;
+}
+
+.wh-content figcaption a {
+	color: var(--c-lightpurple)
+}
+
+.wh-content figcaption a:visited {
+	color: var(--c-highlight)
+}
+
+.wh-content img {
+    border-radius: 64px 24px 0px 0px;
+	border-color: var(--c-grey);
+}
+
+.wh-content h2 {
+	color: var(--c-purple);
+}
